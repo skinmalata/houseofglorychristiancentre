@@ -1,0 +1,44 @@
+{
+  "name": "House of Glory Christian Centre",
+  "short_name": "House of Glory",
+  "description": "House of Glory Christian Centre, Port Harcourt — service times, ministries, giving and the complete Holy Bible offline, all in one app.",
+  "id": "house-of-glory-app",
+  "start_url": "./index.html?utm_source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fdfeff",
+  "theme_color": "#1c1335",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["lifestyle", "education", "news"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Holy Bible",
+      "short_name": "Bible",
+      "description": "Read the complete King James Bible offline",
+      "url": "./bible.html?utm_source=pwa-shortcut",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Service Times",
+      "short_name": "Services",
+      "url": "./services.html?utm_source=pwa-shortcut"
+    },
+    {
+      "name": "Give Online",
+      "short_name": "Give",
+      "url": "./give.html?utm_source=pwa-shortcut"
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "url": "./contact.html?utm_source=pwa-shortcut"
+    }
+  ]
+}
