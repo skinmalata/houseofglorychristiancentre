@@ -117,10 +117,15 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(hideSplash, 4000); /* safety net */
   }
 
-  /* ---------- Inside the installed app: hide the Download App button ---------- */
+  /* ---------- Inside the installed app: Download App -> Read the Bible ---------- */
   if (isStandalone) {
     document.querySelectorAll('[data-install-app]').forEach(function (btn) {
-      btn.style.display = 'none';
+      btn.removeAttribute('data-install-app');
+      btn.removeAttribute('aria-haspopup');
+      btn.setAttribute('href', 'bible.html');
+      btn.innerHTML =
+        '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>' +
+        'Read the Bible';
     });
   }
 

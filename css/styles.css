@@ -1018,9 +1018,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .app-splash img {
-  width: min(100vw, calc(100dvh * 853 / 1844));
-  max-height: 100dvh;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .app-splash.is-fading {
